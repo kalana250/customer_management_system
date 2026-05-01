@@ -50,7 +50,8 @@ including bulk import via Excel file.
 
 ## Project Structure
 
-![img.png](img.png)
+<img width="618" height="356" alt="image" src="https://github.com/user-attachments/assets/71a1223d-6d47-404d-b751-7ae45a2f6fd4" />
+
 
 ---
 
