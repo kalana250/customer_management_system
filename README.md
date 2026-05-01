@@ -185,18 +185,18 @@ API Documentation
 
 Customer Endpoints
 Method	  Endpoint	                    Description	                Request Body
-GET	  /api/customers	            Get all customers	        None
-POST	  /api/customers	            Create new customer  	CustomerRequest JSON
-GET	  /api/customers/{id}	            Get customer by ID	        None
-PUT       /api/customers/{id}	            Update customer	        CustomerRequest JSON
-DELETE	  /api/customers/{id}	            Delete customer     	None
-POST	  /api/customers/bulk-import	    Bulk import from Excel	Multipart file
+GET	      /api/customers	            Get all customers	        None
+POST	  /api/customers	            Create new customer  	    CustomerRequest JSON
+GET	      /api/customers/{id}	        Get customer by ID	        None
+PUT       /api/customers/{id}	        Update customer	            CustomerRequest JSON
+DELETE	  /api/customers/{id}	        Delete customer     	    None
+POST	  /api/customers/bulk-import	Bulk import from Excel	    Multipart file
 
 Master Data Endpoints
 Method	  Endpoint	                        Description
 GET	      /api/master/countries	            Get all countries
 GET	      /api/master/cities	            Get all cities
-GET	      /api/master/cities/country/{id}	    Get cities by country
+GET	      /api/master/cities/country/{id}	Get cities by country
 
 Sample Request Body (Create Customer)
 
@@ -251,10 +251,10 @@ Sample Response (Customer)
 
 Excel Import Format
 Required Columns
-Column	    Header	        Required	Format	        Example
-A	    Name	        Yes	        Text	        Kalana Heshan
-B	    Date of Birth	Yes	        YYYY-MM-DD	1990-01-15
-C	    NIC Number	        Yes	        Text (Unique)	199012345678
+Column	  Header	        Required	Format	        Example
+A	      Name	            Yes	        Text	        Kalana Heshan
+B	      Date of Birth	    Yes	        YYYY-MM-DD	    1990-01-15
+C	      NIC Number	    Yes	        Text (Unique)	199012345678
 
 Sample Excel File
 
@@ -286,10 +286,10 @@ testGetCustomerById	             Gets a specific customer by ID
 testUpdateCustomer	             Updates customer information
 testDeleteCustomer	             Deletes a customer
 testDuplicateNicShouldFail	     Rejects duplicate NIC numbers
-testCreateCustomerWithMobiles	     Creates customer with mobile numbers
+testCreateCustomerWithMobiles	 Creates customer with mobile numbers
 testMissingNameShouldFail	     Validates mandatory fields
-testCustomerNotFound	             Handles non-existent customer
-testCustomerWithFamilyMembers	     Links family members correctly
+testCustomerNotFound	         Handles non-existent customer
+testCustomerWithFamilyMembers	 Links family members correctly
 
 Expected Test Result
 
